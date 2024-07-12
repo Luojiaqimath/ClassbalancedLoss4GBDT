@@ -13,3 +13,5 @@ or
 ```python
 pip install -U cupy-cuda12x py-boost  # for cuda 12.x
 ```
+
+Some examples are provided in file Examples.
