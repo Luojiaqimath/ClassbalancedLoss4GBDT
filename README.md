@@ -2,5 +2,5 @@ This is a python package containing class-balanced loss functions for gradient b
 
 You can install the package by:
 ```python
-pip install -i https://test.pypi.org/simple/ gbdtCBL==0.1
+pip install gbdtCBL==0.1
 ```
