@@ -8,7 +8,7 @@ pip install gbdtCBL==0.1
 To use SketchBoost, the user should first install the following packages:
 ```python
 pip install cupy-cuda11x
-pip install -U cupy-cuda11x py-boost  # for cuda 11.2 ~ 11.8
+pip install -U cupy-cuda113 py-boost  # for cuda 11.3
 ```
 or 
 ```python
