@@ -132,9 +132,7 @@ print(f"F1 Std: {np.std(scores[1])}\n")
 
 
 # data_list = ['ecoli',
-#             'optical_digits',
 #             'satimage',
-#             'pen_digits',
 #             'sick_euthyroid',
 #             'spectrometer',
 #             'car_eval_34',
@@ -144,8 +142,7 @@ print(f"F1 Std: {np.std(scores[1])}\n")
 #             'thyroid_sick',
 #             'arrhythmia',
 #             'oil',
-#             'car_eval_4',
-#             'letter_img',
+#             'yeast_me2',
 #             'webpage',
 #             'mammography',
 #             'protein_homo',
