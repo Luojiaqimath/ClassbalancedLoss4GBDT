@@ -1,4 +1,5 @@
-This is a python package containing class-balanced loss functions for gradient boosting decision tree.
+This is a Python package containing class-balanced loss functions for gradient boosting decision tree. 
+Please refer to the paper for more details.
 
 You can install the package by:
 ```python
