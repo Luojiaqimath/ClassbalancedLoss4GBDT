@@ -21,4 +21,5 @@ Some examples are provided in the Examples file.
 Data used in the paper are also provided.
 
 
-**Please feel free to reach out if you have any ideas or questions!**
+
+**Feel free to reach out if you have any ideas or questions!**
