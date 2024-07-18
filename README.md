@@ -1,4 +1,4 @@
-This is a Python package containing class-balanced loss functions for gradient boosting decision tree. 
+This is a **Python package** containing class-balanced loss functions for gradient boosting decision tree. 
 Please refer to the paper for more details.
 
 You can install the package by:
@@ -19,3 +19,6 @@ pip install -U cupy-cuda12x py-boost  # for cuda 12.x
 Some examples are provided in the Examples file.
 
 Data used in the paper are also provided.
+
+
+**Please feel free to reach out if you have any ideas or questions!**
