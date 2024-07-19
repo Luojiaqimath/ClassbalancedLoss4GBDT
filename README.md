@@ -1,5 +1,5 @@
 This is a **Python package** containing class-balanced loss functions for gradient boosting decision tree. 
-Please refer to the paper for more details.
+Please refer to the paper "Improving GBDT Performance on Imbalanced Datasets: An Empirical Study of Class-Balanced Loss Functions" for more details.
 
 You can install the package by:
 ```python
