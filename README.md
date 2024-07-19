@@ -16,9 +16,7 @@ pip install -U cupy-cuda12x py-boost  # for cuda 12.x
 ```
 
 
-Some examples are provided in the Examples file.
-
-Data used in the paper are also provided.
+Some examples are provided in the Examples file. Data used in the paper are also provided.
 
 
 
