@@ -14,8 +14,6 @@ pip install xgboost
 To use LightGBM, the user should first install the following packages:
 ```python
 pip install lightgbm --config-settings=cmake.define.USE_GPU=ON
-
-pip install lightgbm --config-settings=cmake.define.USE_CUDA=ON
 ```
 
 To use SketchBoost, the user should first install the following packages:
