@@ -6,17 +6,17 @@ You can install the package by:
 pip install gbdtCBL==0.1
 ```
 
-To use XGBoost, the user needs to first install the following packages:
+To use XGBoost, you need to first install the following packages:
 ```python
 pip install xgboost
 ```
 
-To use LightGBM, the user needs to first install the following packages:
+To use LightGBM, you need to first install the following packages:
 ```python
 pip install lightgbm --config-settings=cmake.define.USE_GPU=ON
 ```
 
-To use SketchBoost, the user needs to first install the following packages:
+To use SketchBoost, you need to first install the following packages:
 ```python
 pip install -U cupy-cuda11x py-boost  # for cuda 11.x
 
@@ -24,7 +24,7 @@ pip install -U cupy-cuda12x py-boost  # for cuda 12.x
 ```
 
 
-Some examples are provided in the Examples file. Data used in the paper are also provided.
+Some examples are provided in the Examples file. Datasets used in the paper are also provided.
 
 
 
