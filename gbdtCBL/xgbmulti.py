@@ -23,7 +23,7 @@ class XGBACEMulti():
 
         grad = -encoded_label*(encoded_label-p)-(1-encoded_label)*(encoded_label-pm)
         hess =  encoded_label*(encoded_label-p)*(encoded_label+p-1)+(1-encoded_label)*(encoded_label-pm)*(encoded_label+pm-1)
-        return grad.reshape(grad.shape[0]*grad.shape[1]), hess.reshape(hess.shape[0]*hess.shape[1])
+        return grad, hess
 
     
     
@@ -50,7 +50,7 @@ class XGBASLMulti():
                 (1-encoded_label)*(self.dldp2Xp2(pt, self.r2)*(encoded_label-pm)**2+\
             self.dldpXp(pt, self.r2)*(encoded_label-pm)*(1-2*pm))
 
-        return grad.reshape(grad.shape[0]*grad.shape[1]), hess.reshape(hess.shape[0]*hess.shape[1])
+        return grad, hess
     
     def dldpXp(self, p, r):  # dldp*p
         result = np.zeros(p.shape)
@@ -82,7 +82,7 @@ class XGBAWEMulti():
 
         grad = -self.r*encoded_label*(encoded_label-p)-(1-encoded_label)*(encoded_label-pm)
         hess =  self.r*encoded_label*(encoded_label-p)*(encoded_label+p-1)+(1-encoded_label)*(encoded_label-pm)*(encoded_label+pm-1)
-        return grad.reshape(grad.shape[0]*grad.shape[1]), hess.reshape(hess.shape[0]*hess.shape[1])
+        return grad, hess
 
   
 
@@ -103,7 +103,7 @@ class XGBFLMulti():
         hess = self.dldp2Xp2(pt)*(encoded_label-p)**2+\
             self.dldpXp(pt)*(encoded_label-p)*(1-2*p)
 
-        return grad.reshape(grad.shape[0]*grad.shape[1]), hess.reshape(hess.shape[0]*hess.shape[1])
+        return grad, hess
     
     def dldpXp(self, p):  # dldp*p
         result = np.zeros(p.shape)
@@ -133,7 +133,7 @@ class XGBWCEMulti():
 
         grad = -self.r*encoded_label*(encoded_label-p)-(1-encoded_label)*(encoded_label-p)
         hess =  self.r*encoded_label*(encoded_label-p)*(encoded_label+p-1)+(1-encoded_label)*(encoded_label-p)*(encoded_label+p-1)
-        return grad.reshape(grad.shape[0]*grad.shape[1]), hess.reshape(hess.shape[0]*hess.shape[1])
+        return grad, hess
 
 
 class XGBCBEMulti():
@@ -154,5 +154,5 @@ class XGBCBEMulti():
         
         grad *= ratio
         hess *= ratio
-        return grad.reshape(grad.shape[0]*grad.shape[1]), hess.reshape(hess.shape[0]*hess.shape[1])
+        return grad, hess
 
