@@ -3,7 +3,7 @@ Please refer to the paper "Improving GBDT Performance on Imbalanced Datasets: An
 
 You can install the package by:
 ```python
-pip install gbdtCBL==0.1
+pip install gbdtCBL
 ```
 
 To use XGBoost, you need to first install the following packages:
